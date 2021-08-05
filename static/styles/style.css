@@ -179,7 +179,7 @@ html{
     position: relative;
 }
 .globeIcon{
-    color: blue;
+    color: #000;
     position: absolute;
     font-size: 1.5rem;
     top: 1.9rem;

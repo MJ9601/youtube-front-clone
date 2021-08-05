@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -71,7 +71,7 @@ html{
     position: absolute;
     font-size: 3rem;
     color: rgb(158, 157, 157);
-    top: .5rem;
+    top: .9rem;
     left: 46rem;
 }
 .icon{
@@ -97,7 +97,7 @@ html{
     color: #fff;
     font-size: 2rem;
     position: absolute;
-    top: .9rem;
+    top: 1.2rem;
     left: 0.3rem;
 }
 
@@ -137,6 +137,7 @@ html{
 }
 .change .asidebar{
     width: 26rem;
+    height: 100vh;
 }
 
 .short-sidebar{
@@ -179,7 +180,7 @@ html{
     position: relative;
 }
 .globeIcon{
-    color: blue;
+    color: #000;
     position: absolute;
     font-size: 1.5rem;
     top: 1.9rem;
@@ -201,10 +202,10 @@ html{
 }
 .change .follower-name{
     display: block;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 .change .follower-name ul li {
-    margin-bottom: 2.7rem;
+    margin-bottom: 2rem;
 }
 
 .imgDiv{
@@ -224,13 +225,31 @@ html{
     margin-top: 1rem;
 }
 
-.video-section{
+
+
+
+
+/* middle container */
+.middle-container{
     position: relative;
     top: 8rem;
     left: 8rem;
     width: calc(100% - 65rem);
-    height: 75rem;
-    border: .1rem solid #000;
+    margin-top: 4rem;
+}
+.middle-container1{
+    position: relative;
+    top: 8rem;
+    left: 8rem;
+    width: calc(100% - 65rem);
+}
+
+/* video section */
+.video-section{
+    width: 100%;
+    height: 83rem;
+    /* border: .1rem solid #000; */
+
 }
 .video-wrapper{
     width: 100%;
@@ -241,8 +260,182 @@ html{
     height: auto;
 }
 
+.video-details{
+    margin-top: .5rem;
+    position: relative;
+}
+.highlights{
+    color: blue;
+    font-size: 1.5rem;
+}
+.video-name{
+    margin-top: .5rem;
+    font-size: 3rem;
+}
+.video-discription{
+    display: flex;
+    float: left;
+    font-size: 2rem;
+    margin-top: .9rem;
+    justify-content: space-between;
+    color: rgb(87, 87, 87);
+    border-bottom: .1rem solid #000;
+    width: 100%;
+
+}
+.video-icon{
+    position: absolute;
+    right: 1rem;
+    top: 8.5rem;
+    font-size: 2rem;
+    color: rgb(87, 87, 87);
+
+}
+.video-icon i:hover{
+    color: red;
+    cursor: pointer;
+}
+.space{
+    margin-right: 1.5rem;
+}
 
 
+
+/* Subscription section */
+
+.channel-details{
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    position: relative;
+}
+.channel-name{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+.channel-name h3{
+    color: rgb(87, 87, 87);
+    line-height: 1rem;
+    font-size: 1.3rem;
+}
+.button-holder{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+.sub-button{
+    width: 14rem;
+    height: 4rem;
+    border: none;
+    background-color: red;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+.sub-button::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: attr(data-content);
+    width: 14rem;
+    height: 4rem;
+    border: none;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(87, 87, 87);
+    opacity: 0;
+    visibility: hidden;
+}
+.sub-button:active::before{
+    opacity: 1;
+    visibility: visible;  
+}
+.channel-text{
+    color: rgb(87, 87, 87);
+    margin-top: 3rem;
+    margin-left: 9rem;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    border-bottom: .1rem solid rgb(199, 198, 198);
+}
+
+/* comment section */
+.comments{
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 9rem;
+    font-size: 1.5rem;
+    color: rgb(87, 87, 87);
+}
+.comments h2{
+    color: #000;
+}
+.comment-tage{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: calc(100% - 10rem);
+   
+}
+.ur-comment-tage{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.ur-comment-tage .img-profile{
+    margin-top: 3rem;
+}
+.ur-comment-tage input{
+    margin-left: 2rem;
+    border: none;
+    font-size: 2rem;
+    padding: 2rem 0 0 1rem;
+    border-bottom: .1rem solid rgb(199, 198, 198);
+    background-color: rgb(238, 247, 255);
+    width: 90%;
+}
+
+.response{
+    margin-top: 4rem;
+    display: flex;
+}
+.response .img-profile{
+    width: 9rem;
+    height: fit-content;
+}
+.comment-details{
+    margin-left: 2rem;
+}
+.name-date{
+    display: flex;
+    color: #000;
+    font-size: 1.8rem;
+}
+.name-date h2{
+    margin-top: 1.2rem;
+    margin-left: 1.5rem;
+    font-size: 1.4rem;
+    color: rgb(87, 87, 87);
+}
+.comment-holder{
+    margin-top: 1rem;
+    font-size: 1.9rem;
+    font-weight: 200;
+
+}
+.comment-icons{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.comment-icons:hover{
+    color: red;
+}
+.replies{
+    color: blue;
+}
 
 /* aside right content */
 .right-content{
@@ -295,5 +488,129 @@ html{
 
 
 
+@media (max-width:1800px) {
+    .video-section{
+        height: 75rem;
+    }
+}
+@media (max-width:1700px) {
+    .video-section{
+        height: 70rem;
+    }
+}
+@media (max-width:1550px) {
+    .video-section{
+        height: 60rem;
+    }
+}
+@media (max-width:1450px) {
+    .middle-container1{
+        width: 90%;
+        height: inherit;
+    }
+    .subscribtion{
+        position: relative;
+        margin-top: 32rem; 
+    }
+    .right-content{
+        top: 100rem;
+    }
+
+}
+@media (max-width:1300px) {
+    .subscribtion{
+        position: relative;
+        margin-top: 24rem; 
+    }
+    .right-content{
+        top: 92rem;
+    }
+
+}
+
+@media (max-width:1150px) {
+    .subscribtion{
+        position: relative;
+        margin-top: 12rem; 
+    }
+    .right-content{
+        top: 80rem;
+    }
+
+}
+@media (max-width:1150px) {
+    .middle-container{
+        width: 80%;
+    }
+
+    .right-content{
+        top: 15rem;
+        left: 25%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media (max-width:1000px) {
+
+    .subscribtion{
+        position: relative;
+        margin-top: 12rem; 
+        
+    }
+    .right-content{
+        position: relative;
+        align-items: center;
+        top: 15rem;
+        margin-left: 6rem;
+
+    }
+    .logo span{
+        display: none;
+    }
+    .videoIcon{
+        display: none;
+    }
+}
+
+
+@media (max-width:900px) {
+    .subscribtion{
+        position: relative;
+        margin-top: 0;
+        
+    }
+
+    .right-content{
+        margin: auto;
+        position: relative;
+        left: 10rem;
+        width: 90%;
+    }
+    .comments{
+        display: none;
+    }
+    
+}
+
+@media (max-width:650px) {
+    .subscribtion{
+        position: relative;
+        margin-top: 0;
+        
+    }
+    .middle-container1{
+        width: 70%;
+    }
+    .right-content{
+        display: none
+    }
+
+
+}
 
 
