@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fjalla One', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+    background-color: rgb(238, 247, 255);
+}
+
+.container{
+    width: 100%;
+    position: relative;
+    
+}
+.navbar{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    position: fixed;
+    z-index: 5;
+}
+.left-side{
+    margin-left: 3rem;
+    display: flex;
+    font-size: 4rem;
+    flex-flow: row;
+    float: left;
+    align-items: center;
+}
+.sidebar-icon{
+    margin-right: 1rem;
+}
+.sidebar-icon a{
+    color: #000;
+}
+
+.logo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 2rem;
+    color: red;
+}
+.logo span{
+    color: #000;
+}
+.middle{
+    margin:auto;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    font-size: 4rem; 
+    position: relative;
+}
+.search input{
+    width: 50rem;
+    border-radius: 3rem;
+    border: .1rem solid #000;
+    padding-left: 2rem;
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+.searchIcon {
+    position: absolute;
+    font-size: 3rem;
+    color: rgb(158, 157, 157);
+    top: .5rem;
+    left: 46rem;
+}
+.icon{
+    margin: auto;
+    font-size: 3rem;
+    margin-right: 2rem;
+    color: rgb(87, 87, 87);
+}
+
+.right-side{
+    display: flex;
+    float: right;
+    font-size: 4rem;
+    margin-right: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.videoIcon{
+    font-size: 3rem;
+    position: relative;
+}
+.videoIcon span i{
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: .9rem;
+    left: 0.3rem;
+}
+
+.icon:hover{
+    cursor: pointer;
+    color: red;
+}
+.img-profile{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 2rem;
+
+
+}
+.img-profile img {
+    width: 100%;
+    height: inherit;
+    border: .1rem solid #000;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+/* aside  left*/
+.asidebar{
+    position: fixed;
+    top:6rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 6rem;
+    z-index: 5;
+    font-size: 3rem;
+    background-color: rgb(255, 255, 255);
+}
+.change .asidebar{
+    width: 26rem;
+}
+
+.short-sidebar{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.gernal-icons{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    align-items: center;
+    text-align: center;
+}
+.hiddin-bar{
+    display: none;
+}
+
+.change .hiddin-bar{
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.hiddin-bar ul li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    color: rgb(87, 87, 87);
+}
+.hiddin-bar ul li:hover{
+    color: red;
+}
+.gernal-icons .icon{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.globe{
+    position: relative;
+}
+.globeIcon{
+    color: blue;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1.9rem;
+    left: .7rem;
+
+}
+.sub{
+    display: none;
+}
+.change .sub{
+    display: block;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.follower-name{
+    display: none;
+}
+.change .follower-name{
+    display: block;
+    margin-top: 2rem;
+}
+.change .follower-name ul li {
+    margin-bottom: 2.7rem;
+}
+
+.imgDiv{
+    width: 4rem;
+    height: 4rem;
+    margin:1.2rem 1.5rem;
+}
+
+.imgDiv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.change aside .followers {
+    margin-top: 1rem;
+}
+
+.video-section{
+    position: relative;
+    top: 8rem;
+    left: 8rem;
+    width: calc(100% - 65rem);
+    height: 75rem;
+    border: .1rem solid #000;
+}
+.video-wrapper{
+    width: 100%;
+    height: fit-content;
+}
+.video-wrapper video{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* aside right content */
+.right-content{
+    position: absolute;
+    right: 3rem;
+    top: 8rem;
+    /* border: .1rem solid #000; */
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content-wrapper{
+    display: flex;
+    width: 100%;
+    height: 12rem;
+    margin-bottom: 2rem;
+}
+.img-wrapper{
+    width: 25rem;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+.img-wrapper img{
+    position: relative;
+    top: 0;
+    border-radius: .5rem;
+    width: 100%;
+    height: 100%;
+}
+.content-name{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.img-content{
+    margin-left: 0;
+    margin-right: 1rem;
+}
+.content-details{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-family: serif;
+    font-weight: 100;
+    color: rgb(136, 136, 136);
+    line-height: 2rem;
+}
+
+
+
+
+
+

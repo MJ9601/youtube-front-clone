@@ -24,6 +24,7 @@ html{
     background-color: rgb(255, 255, 255);
     color: #fff;
     position: fixed;
+    z-index: 5;
 }
 .left-side{
     margin-left: 3rem;
@@ -64,6 +65,7 @@ html{
     border: .1rem solid #000;
     padding-left: 2rem;
     font-size: 3rem;
+    margin-right: 2rem;
 }
 .searchIcon {
     position: absolute;
@@ -75,7 +77,7 @@ html{
 .icon{
     margin: auto;
     font-size: 3rem;
-    margin-left: 2rem;
+    margin-right: 2rem;
     color: rgb(87, 87, 87);
 }
 
@@ -96,7 +98,7 @@ html{
     font-size: 2rem;
     position: absolute;
     top: .9rem;
-    left: 2.3rem;
+    left: 0.3rem;
 }
 
 .icon:hover{
@@ -115,7 +117,10 @@ html{
     height: inherit;
     border: .1rem solid #000;
     border-radius: 50%;
+    object-fit: cover;
 }
+
+
 
 /* aside */
 .asidebar{
@@ -126,20 +131,212 @@ html{
     flex-direction: column;
     height: 100vh;
     width: 6rem;
+    z-index: 5;
     font-size: 3rem;
-    margin: 3rem 2rem; 
+    background-color: rgb(255, 255, 255);
 }
-.sidebarDiv{
-    width: 100%;
+.change .asidebar{
+    width: 26rem;
 }
+
+.short-sidebar{
+    display: flex;
+    margin-top: 3rem;
+}
+
 .gernal-icons{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 2rem;
+    margin-left: 2rem;
+    align-items: center;
     text-align: center;
 }
-.gernal-icons .icon{
+.hiddin-bar{
+    display: none;
+}
+
+.change .hiddin-bar{
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
     font-size: 2rem;
+}
+.hiddin-bar ul li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    color: rgb(87, 87, 87);
+}
+.hiddin-bar ul li:hover{
+    color: red;
+}
+.gernal-icons .icon{
+    font-size: 2.2rem;
     margin-bottom: 1rem;
 }
+.globe{
+    position: relative;
+}
+.globeIcon{
+    color: blue;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1.9rem;
+    left: .7rem;
+
+}
+.sub{
+    display: none;
+}
+.change .sub{
+    display: block;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.follower-name{
+    display: none;
+}
+.change .follower-name{
+    display: block;
+    margin-top: 2rem;
+}
+.change .follower-name ul li {
+    margin-bottom: 2.7rem;
+}
+
+.imgDiv{
+    width: 4rem;
+    height: 4rem;
+    margin:1.2rem 1.5rem;
+}
+
+.imgDiv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.change aside .followers {
+    margin-top: 1rem;
+}
+
+
+/* banner */
+.banner{
+    position: relative;
+    top: 8rem;
+    left: 8rem;
+    width: calc(100% - 10rem);
+    height: 40rem;
+    background-image: url('../images/banner.jpg');
+    background-size: 100% 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.text-holder{
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+    color: #fff;
+    font-size: 4rem;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 3rem;
+    width: 12rem;
+    height: 5rem;
+    opacity: .5;
+    background-color: #000;
+    color: #eee;
+    border: none;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button::after{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    content: "DISCOVER NOW";
+    position: absolute;
+    color: #eee;
+    top: 0;
+    left: 0%;
+    width: 0;
+    height:100%;
+    /* background-color: red; */
+    border-radius: .5rem;
+    transition: width .3s ease-in-out;
+}
+.button:hover::after{
+    background-color: red;
+    width: 100%;
+    opacity: 1;
+}
+
+
+
+
+/* main content */
+.main-content{
+    position: relative;
+    left: 9rem;
+    top: 10rem;
+    /* border: .1rem solid #000; */
+    width: calc(100% - 10rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content-wrapper{
+    margin-right: 2rem;
+    width: 34rem;
+    height: 35rem;
+}
+.img-wrapper{
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1rem;
+}
+
+.img-wrapper img{
+    position: relative;
+    top: 0;
+    border-radius: .5rem;
+    width: 100%;
+    height: 100%;
+}
+.content-name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.img-content{
+    margin-left: 0;
+    margin-right: 1rem;
+}
+.content-details{
+    margin-left: 5.5rem;
+    font-size: 1.5rem;
+    font-family: serif;
+    font-weight: 100;
+    color: rgb(136, 136, 136);
+    line-height: 2rem;
+}
+
+
+
 
 
 
